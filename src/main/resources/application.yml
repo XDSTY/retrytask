@@ -1,0 +1,12 @@
+spring:
+  my:
+    datasource:
+      username: '@jdbc.name@'
+      password: '@jdbc.password@'
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: '@jdbc.url@'
+      initial-size: 5
+      max-active: 5
+      max-wait: 6000
+      min-idle: 5
+      pool-prepared-statements: false
