@@ -13,14 +13,14 @@ public class RetryTask {
     private String taskType;
 
     /**
-     * 请求参数json
-     */
-    private String requestJson;
-
-    /**
      * 任务基本信息json
      */
     private String retryBasicInfoJson;
+
+    /**
+     * 任务基本信息
+     */
+    private RetryBasicInfo retryBasicInfo;
 
     /**
      * 退避策略
@@ -31,11 +31,6 @@ public class RetryTask {
      * 重试策略
      */
     private Integer retryType;
-
-    /**
-     * 最大重试次数
-     */
-    private Integer maxRetryCount;
 
     /**
      * 任务状态
@@ -68,20 +63,20 @@ public class RetryTask {
         this.taskType = taskType;
     }
 
-    public String getRequestJson() {
-        return requestJson;
-    }
-
-    public void setRequestJson(String requestJson) {
-        this.requestJson = requestJson;
-    }
-
     public String getRetryBasicInfoJson() {
         return retryBasicInfoJson;
     }
 
     public void setRetryBasicInfoJson(String retryBasicInfoJson) {
         this.retryBasicInfoJson = retryBasicInfoJson;
+    }
+
+    public RetryBasicInfo getRetryBasicInfo() {
+        return retryBasicInfo;
+    }
+
+    public void setRetryBasicInfo(RetryBasicInfo retryBasicInfo) {
+        this.retryBasicInfo = retryBasicInfo;
     }
 
     public Integer getBackOffType() {
@@ -98,14 +93,6 @@ public class RetryTask {
 
     public void setRetryType(Integer retryType) {
         this.retryType = retryType;
-    }
-
-    public Integer getMaxRetryCount() {
-        return maxRetryCount;
-    }
-
-    public void setMaxRetryCount(Integer maxRetryCount) {
-        this.maxRetryCount = maxRetryCount;
     }
 
     public Integer getTaskStatus() {

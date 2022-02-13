@@ -17,6 +17,16 @@ public class RetryBasicInfo {
      */
     private Integer exponentMaxBackOffTime;
 
+    /**
+     * 最大重试次数
+     */
+    private Integer maxRetryCount;
+
+    /**
+     * 请求参数json
+     */
+    private String requestJson;
+
     public Integer getBackOffTime() {
         return backOffTime;
     }
@@ -39,5 +49,21 @@ public class RetryBasicInfo {
 
     public void setExponentMaxBackOffTime(Integer exponentMaxBackOffTime) {
         this.exponentMaxBackOffTime = exponentMaxBackOffTime;
+    }
+
+    public Integer getMaxRetryCount() {
+        return maxRetryCount;
+    }
+
+    public void setMaxRetryCount(Integer maxRetryCount) {
+        this.maxRetryCount = maxRetryCount;
+    }
+
+    public String getRequestJson() {
+        return requestJson;
+    }
+
+    public void setRequestJson(String requestJson) {
+        this.requestJson = requestJson;
     }
 }

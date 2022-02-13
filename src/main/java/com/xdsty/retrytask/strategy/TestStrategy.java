@@ -1,10 +1,13 @@
 package com.xdsty.retrytask.strategy;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class TestStrategy implements RetryTaskStrategy {
 
     @Override
     public void execute(String requestJson) {
-
+        System.out.println("TestStrategy execute...");
     }
 
     @Override
