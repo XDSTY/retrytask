@@ -1,5 +1,7 @@
 package com.xdsty.retrytask.entity;
 
+import java.util.Date;
+
 public class RetryTask {
 
     /**
@@ -46,6 +48,26 @@ public class RetryTask {
      * 最终失败时的异常信息
      */
     private String exceptionMsg;
+
+    /**
+     * 任务创建时间
+     */
+    private Date createTime;
+
+    /**
+     * 创建人姓名
+     */
+    private String createUser;
+
+    /**
+     * 开始执行时间
+     */
+    private Date startExecuteTime;
+
+    /**
+     * 最终完成或者失败时间
+     */
+    private Date finishTime;
 
     public Long getId() {
         return id;
@@ -117,5 +139,37 @@ public class RetryTask {
 
     public void setExceptionMsg(String exceptionMsg) {
         this.exceptionMsg = exceptionMsg;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public String getCreateUser() {
+        return createUser;
+    }
+
+    public void setCreateUser(String createUser) {
+        this.createUser = createUser;
+    }
+
+    public Date getStartExecuteTime() {
+        return startExecuteTime;
+    }
+
+    public void setStartExecuteTime(Date startExecuteTime) {
+        this.startExecuteTime = startExecuteTime;
+    }
+
+    public Date getFinishTime() {
+        return finishTime;
+    }
+
+    public void setFinishTime(Date finishTime) {
+        this.finishTime = finishTime;
     }
 }

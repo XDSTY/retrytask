@@ -22,6 +22,11 @@ public class FixBackOffRetryTask {
      */
     private String taskType;
 
+    /**
+     * 任务创建人
+     */
+    private String createUser;
+
     public Integer getFixBackOffTime() {
         return fixBackOffTime;
     }
@@ -52,5 +57,13 @@ public class FixBackOffRetryTask {
 
     public void setTaskType(String taskType) {
         this.taskType = taskType;
+    }
+
+    public String getCreateUser() {
+        return createUser;
+    }
+
+    public void setCreateUser(String createUser) {
+        this.createUser = createUser;
     }
 }

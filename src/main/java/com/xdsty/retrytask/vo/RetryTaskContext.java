@@ -66,6 +66,10 @@ public class RetryTaskContext {
         return dataSource;
     }
 
+    /**
+     * 捕获异常
+     * @param e
+     */
     public void registerException(Throwable e) {
         this.throwable = e;
         this.retryCount ++;

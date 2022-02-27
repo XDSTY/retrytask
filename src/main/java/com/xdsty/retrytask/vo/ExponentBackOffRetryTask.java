@@ -31,4 +31,65 @@ public class ExponentBackOffRetryTask {
      * 任务类型
      */
     private String taskType;
+
+    /**
+     * 创建人
+     */
+    private String createUser;
+
+    public Integer getBackOffTime() {
+        return backOffTime;
+    }
+
+    public void setBackOffTime(Integer backOffTime) {
+        this.backOffTime = backOffTime;
+    }
+
+    public Double getExponentValue() {
+        return exponentValue;
+    }
+
+    public void setExponentValue(Double exponentValue) {
+        this.exponentValue = exponentValue;
+    }
+
+    public Integer getMaxRetryCount() {
+        return maxRetryCount;
+    }
+
+    public void setMaxRetryCount(Integer maxRetryCount) {
+        this.maxRetryCount = maxRetryCount;
+    }
+
+    public Integer getExponentMaxBackOffTime() {
+        return exponentMaxBackOffTime;
+    }
+
+    public void setExponentMaxBackOffTime(Integer exponentMaxBackOffTime) {
+        this.exponentMaxBackOffTime = exponentMaxBackOffTime;
+    }
+
+    public String getRequestJson() {
+        return requestJson;
+    }
+
+    public void setRequestJson(String requestJson) {
+        this.requestJson = requestJson;
+    }
+
+    public String getTaskType() {
+        return taskType;
+    }
+
+    public void setTaskType(String taskType) {
+        this.taskType = taskType;
+    }
+
+    public String getCreateUser() {
+        return createUser;
+    }
+
+    public void setCreateUser(String createUser) {
+        this.createUser = createUser;
+    }
 }
